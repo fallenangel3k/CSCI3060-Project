@@ -20,8 +20,8 @@ public class FileReader {
 	String filePath, mergedPath;
 
 	// constructor, sets global variables from that was just created
-	public FileReader(String path, String merge) {
-		filePath = path;
+	public FileReader(String merge) {
+		filePath = ".";
 		mergedPath = merge;
 	}
 

@@ -22,12 +22,14 @@ public class Main {
 			// first argument given is the merged path
 			mergedPath = args[0];
 			// second argument given is the transaction directory
-			transDir = args[1];
+			//transDir = args[1];
 			// if exception/error occurs, print out error messages
 		} catch (Exception e) {
 			System.out.println("No arguments specified, please enter the merge directory followed by the transaction file directory.");
 			System.out.println("Ex. java Main /home/vm/Code/Untitled/Phase4/ /home/vm/Code/Untitled/Phase3/");
 		}
+		
+		/*
 		
 		// create a new file reader
 		FileReader fr = new FileReader(transDir, mergedPath);
@@ -40,10 +42,10 @@ public class Main {
 		wr.writeTransaction(fr.get());
 		// close the file
 		wr.close();
+		
+		*/
 
-	
-
-		Transactions T = new Transactions(transDir, mergedPath);
+		Transactions T = new Transactions(mergedPath);
 
 	}
 }

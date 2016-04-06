@@ -33,10 +33,10 @@ public class Transactions {
 	// store the current index of the transactions list
 	int trans_index;
 
-	public Transactions(String transDir, String mergedPath) {
+	public Transactions(String mergedPath) {
 		all_accounts = new ArrayList<account>();
 		all_trans = new ArrayList<trans>();
-		FR = new FileReader(transDir, mergedPath);
+		FR = new FileReader(mergedPath);
 		parseMaster();
 		parseMerged();
 
