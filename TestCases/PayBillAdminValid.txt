@@ -1,0 +1,18 @@
+login
+admin
+paybill
+Troy Bartan
+10000
+EC
+1.00
+paybill
+Troy Bartan
+10000
+CQ
+1.00
+paybill
+Troy Bartan
+10000
+TV
+1.00
+logout

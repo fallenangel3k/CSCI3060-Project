@@ -1,0 +1,7 @@
+login
+standard
+Troy Bartan
+disable
+George Frick
+15000
+logout

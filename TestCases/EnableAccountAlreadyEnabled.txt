@@ -1,0 +1,6 @@
+login
+admin
+enable
+Troy Bartan
+10000
+logout

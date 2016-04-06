@@ -1,0 +1,6 @@
+login
+admin
+disable
+George Frick
+10000
+logout

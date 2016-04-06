@@ -1,0 +1,6 @@
+login
+admin
+deposit
+Phil Cooper
+1000012
+logout

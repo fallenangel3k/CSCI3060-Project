@@ -1,0 +1,8 @@
+login
+admin
+delete
+Sam Fischer
+11110
+delete
+sdfsd
+logout

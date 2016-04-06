@@ -1,0 +1,8 @@
+login
+standard
+Troy Bartan
+paybill
+10000
+EC
+1.00
+logout

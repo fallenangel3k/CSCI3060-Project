@@ -1,0 +1,6 @@
+login
+admin
+changeplan
+George Frick
+15000
+logout

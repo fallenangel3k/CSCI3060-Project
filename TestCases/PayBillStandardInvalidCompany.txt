@@ -1,0 +1,10 @@
+login
+standard
+Troy Bartan
+paybill
+10000
+EQ
+paybill
+10000
+134;
+logout

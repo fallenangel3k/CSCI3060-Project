@@ -1,0 +1,6 @@
+login
+admin
+deposit
+Phil Cooper
+10000
+logout

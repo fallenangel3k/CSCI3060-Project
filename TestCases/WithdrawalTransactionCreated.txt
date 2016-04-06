@@ -1,0 +1,9 @@
+login 
+standard
+Sam Fischer
+withdrawal
+11000
+450.00
+withdrawal
+12345
+logout 

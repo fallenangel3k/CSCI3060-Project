@@ -1,0 +1,10 @@
+login
+standard
+Troy Bartan
+deposit
+10001
+475.10
+deposit
+10000
+25.10
+logout

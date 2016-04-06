@@ -1,0 +1,6 @@
+login
+admin
+changeplan
+Jose Ankin 
+10003 
+logout

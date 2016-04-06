@@ -1,0 +1,17 @@
+login 
+admin
+withdraw 
+Troy Bartan 
+10000
+100.00
+changeplan
+Sam Fischer
+11000
+deposit 
+Troy Bartan
+10000
+100.05
+changeplan
+Sam Fischer
+11001
+logout 

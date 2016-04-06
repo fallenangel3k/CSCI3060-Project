@@ -1,0 +1,20 @@
+login 
+standard
+Troy Bartan 
+withdrawal
+10000
+100000000.00
+withdrawal 
+10000
+466.66
+withdrawal 
+10000
+465
+logout 
+login 
+standard 
+Phil Cooper 
+withdrawal 
+20000
+125.00
+logout 

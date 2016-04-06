@@ -1,0 +1,8 @@
+login
+standard
+Phil Cooper
+transfer
+20000
+10001
+200.00
+logout

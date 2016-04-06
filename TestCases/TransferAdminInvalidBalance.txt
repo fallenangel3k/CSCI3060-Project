@@ -1,0 +1,8 @@
+login
+admin
+transfer
+Troy Bartan
+10000
+20000
+550.00
+logout

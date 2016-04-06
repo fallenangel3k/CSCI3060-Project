@@ -1,0 +1,29 @@
+login
+standard
+Timothy Franklin
+paybill
+10002
+EC
+2000.00
+paybill
+10002
+EC
+2000.00
+paybill
+10002
+TV
+2000.00
+paybill
+10002
+TV
+100.00
+logout
+login
+standard
+Timothy Franklin
+paybill
+10002
+EC
+2000.00
+logout
+

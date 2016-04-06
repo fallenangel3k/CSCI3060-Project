@@ -1,0 +1,12 @@
+login
+standard
+Troy Bartan
+transfer
+10002
+transfer
+10000
+20004
+transfer
+10000
+2000a4
+logout

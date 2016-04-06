@@ -1,0 +1,17 @@
+login
+admin
+changeplan
+Timothy Franklin
+10002
+withdraw
+Timothy Franklin
+10002
+100.00
+changeplan
+Timothy Franklin
+10002
+deposit
+Timothy Franklin
+10002
+100.15
+logout

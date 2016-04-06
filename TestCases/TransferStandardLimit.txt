@@ -1,0 +1,12 @@
+login
+standard
+Troy Bartan
+transfer
+10000
+20000
+550.00
+transfer
+10001
+20000
+1005.00
+logout

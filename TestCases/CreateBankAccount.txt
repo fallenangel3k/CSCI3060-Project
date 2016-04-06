@@ -1,0 +1,6 @@
+login
+admin
+create
+Jose Ankin
+460.10
+logout

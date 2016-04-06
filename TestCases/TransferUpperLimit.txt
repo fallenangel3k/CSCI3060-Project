@@ -1,0 +1,16 @@
+login
+standard
+Timothy Franklin
+transfer
+10002
+20000
+99999.89
+logout
+login
+admin
+transfer
+Timothy Franklin
+10002
+20000
+99999.89
+logout

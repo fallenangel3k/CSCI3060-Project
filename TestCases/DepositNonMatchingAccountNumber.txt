@@ -1,0 +1,6 @@
+login
+standard
+Troy Bartan
+deposit
+10002
+logout

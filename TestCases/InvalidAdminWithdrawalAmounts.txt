@@ -1,0 +1,19 @@
+login
+admin
+withdrawal
+Troy Bartan
+10000
+550.00
+withdrawal
+Troy Bartan
+10000
+464.00
+withdrawal
+Troy Bartan
+10001
+550
+withdrawal 
+Troy Bartan
+10000 
+asdffasdf
+logout

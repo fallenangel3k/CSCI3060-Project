@@ -1,0 +1,14 @@
+login
+standard
+Troy Bartan
+deposit
+10000
+1000000
+logout
+login
+admin
+deposit
+Troy Bartan
+10000
+1000000
+logout

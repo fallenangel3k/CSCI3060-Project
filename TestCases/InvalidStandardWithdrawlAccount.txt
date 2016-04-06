@@ -1,0 +1,10 @@
+login 
+standard 
+Troy Bartan
+withdrawal 
+10002
+withdrawal 
+100001111
+withdrawal 
+asdfjeudijd88
+logout 

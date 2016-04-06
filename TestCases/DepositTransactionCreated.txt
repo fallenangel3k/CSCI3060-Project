@@ -1,0 +1,9 @@
+login
+standard
+Sam Fishcer
+deposit
+11000
+450.10
+deposit
+sssddd
+logout

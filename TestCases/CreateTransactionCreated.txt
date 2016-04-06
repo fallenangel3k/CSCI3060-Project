@@ -1,0 +1,8 @@
+login 
+admin
+create
+Sam Fischer
+123.22
+create 
+ssasss
+logout

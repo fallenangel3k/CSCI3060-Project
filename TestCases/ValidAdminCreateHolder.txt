@@ -1,0 +1,17 @@
+login 
+admin
+create
+Jose Ankin
+450.50
+withdraw 
+Jose Ankin
+deposit
+Jose Ankin
+Transfer
+Jose Ankin
+paybill
+Jose Ankin
+create 
+Faker Fakersonismilman
+900.10
+logout

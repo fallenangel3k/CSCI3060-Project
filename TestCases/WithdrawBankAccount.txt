@@ -1,0 +1,7 @@
+login
+admin
+withdrawal
+Jose Ankin 
+10003
+60.00
+logout

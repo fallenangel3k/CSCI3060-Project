@@ -1,0 +1,6 @@
+login
+admin
+disable
+Jose Ankin 
+10003 
+logout

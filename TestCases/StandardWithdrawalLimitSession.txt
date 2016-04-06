@@ -1,0 +1,14 @@
+login
+standard
+Troy Bartan
+withdrawal
+10000
+500.00
+logout
+login
+standard
+Troy Bartan
+withdrawal
+10000
+5.00
+logout

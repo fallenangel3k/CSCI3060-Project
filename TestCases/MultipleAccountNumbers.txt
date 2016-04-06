@@ -1,0 +1,16 @@
+login 
+standard
+Sam Fischer 
+withdraw 
+11000
+100.00
+deposit 
+11000
+100.05
+withdraw 
+11001
+100.00
+deposit 
+11001
+100.05
+logout
