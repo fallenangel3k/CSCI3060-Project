@@ -7,23 +7,20 @@ tests=("ValidAdminCreateAccountNumber.txt" "DepositAdminSuccessful.txt" "EnableB
        "4 1" "4 2" "4 3" "4 4" "4 5"
        "5 1" "5 2" "5 3" "5 4" "5 5")
 
-
 for i in `seq 0 4`;
 do
     # Accesses the elements from the simulated 2d array
+    echo
     echo ${tests[$((($1 - 1) * 5 + $i))]}
     cat ./TestCases/${tests[$((($1 - 1) * 5 + $i))]} | ./FrontEnd/FrontEnd
-    mv TransactionFile.txt Day${1}TransactionFile$((1 + $i)).txt
+    mv ./TransactionFile.txt ./Day${1}/TransactionFile$((1 + $i)).txt
 done
 
 for i in `seq 0 4`;
 do
     # Merge the transaction files
-    cat Day${1}TransactionFile$((1 + $i)).txt >> MergedTransactionFile.txt
+    cat ./Day${1}/TransactionFile$((1 + $i)).txt >> ./Day${1}/MergedTransactionFile.txt
 done
 
-
-
-# cat ./TestCases/${tests[${i}]} | ./FrontEnd/FrontEnd
-# mv TransactionFile.txt Day${1}TransactionFile${i}.txt
-
+cd ./BackEnd
+java Main ../MergedTransactionFile.txt
