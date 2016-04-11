@@ -1,7 +1,7 @@
-10000 Troy Bartan          A 01157.50 0060
-10001 Troy Bartan          A 13801.70 0005
-10002 Timothy Franklin     A 99999.99 0000
-11000 Sam Fischer          A 02000.00 0000
-11001 Sam Fischer          A 03000.00 0000
-15000 George Frick         D 00250.00 0000
-20000 Phil Cooper          A 00100.00 0000
+10000 Troy Bartan          A 01157.50 S 0060
+10001 Troy Bartan          A 13801.70 S 0005
+10002 Timothy Franklin     A 99999.99 N 0000
+11000 Sam Fischer          A 02000.00 S 0000
+11001 Sam Fischer          A 03000.00 N 0000
+15000 George Frick         D 00250.00 N 0000
+20000 Phil Cooper          A 00100.00 S 0000
