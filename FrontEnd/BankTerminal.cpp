@@ -205,6 +205,7 @@ void withdraw() {
 	if (isAdmin == true) {
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -213,6 +214,7 @@ void withdraw() {
 	}
 	cout << "Please enter account number:" << endl;
 	getline(cin, input);
+	input.erase(input.find_last_not_of(" \n\r\t")+1);
 	accnum = input;
 	// A bunch of if statments to make sure use is entering valid strings using regexes
 	if (regex_match(accnum, regex("(\\d{5})"))) {
@@ -222,6 +224,7 @@ void withdraw() {
 			if (accounts[accountnum].getActivity()) {
 				cout << "Please choose amount to withdraw" << endl;
 				getline(cin, input);
+				input.erase(input.find_last_not_of(" \n\r\t")+1);
 				amount = input;
 				if (regex_match(amount, regex("(\\d+)(\.)(\\d{2})"))) {
 					// Checks if the amount to pay is payable in biils
@@ -283,6 +286,7 @@ void deposit() {
 	if (isAdmin == true) {
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -291,6 +295,7 @@ void deposit() {
 	}
 	cout << "Please enter account number:" << endl;
 	getline(cin, input);
+	input.erase(input.find_last_not_of(" \n\r\t")+1);
 	accnum = input;
 	// A bunch of if statments to make sure use is entering valid strings using regexe
 	if (regex_match(accnum, regex("(\\d{5})"))) {
@@ -300,6 +305,7 @@ void deposit() {
 			if (accounts[accountnum].getActivity()) {
 				cout << "Please choose amount to deposit" << endl;
 				getline(cin, input);
+				input.erase(input.find_last_not_of(" \n\r\t")+1);
 				amount = input;
 				if (regex_match(amount, regex("(\\d+)(\.)(\\d{2})"))) {
 					if (isAdmin == true) {
@@ -360,6 +366,7 @@ void transfer() {
 	if (isAdmin == true) {
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -368,6 +375,7 @@ void transfer() {
 	}
 	cout << "Please enter account number to transfer from" << endl;
 	getline(cin, input);
+	input.erase(input.find_last_not_of(" \n\r\t")+1);
 	accfrom = input;
 	// A bunch of if statments to make sure use is entering valid strings using regexes
 	if (regex_match(accfrom, regex("(\\d{5})"))) {
@@ -377,6 +385,7 @@ void transfer() {
 			if (accounts[accountfrom].getActivity()) {
 				cout << "Please enter account number to transfer to:" << endl;
 				getline(cin, input);
+				input.erase(input.find_last_not_of(" \n\r\t")+1);
 				accto = input;
 				if (regex_match(accto, regex("(\\d{5})"))) {
 					int accountto = searchAccounts(accto);
@@ -385,6 +394,7 @@ void transfer() {
 						if (accounts[accountto].getActivity()) {
 							cout << "Please enter amount to transfer:" << endl;
 							getline(cin, input);
+							input.erase(input.find_last_not_of(" \n\r\t")+1);
 							amount = input;
 							if (regex_match(amount, regex("(\\d+)(\.)(\\d{2})"))) {
 								// Checking if the recieving account will be above the max amount in an account
@@ -459,6 +469,7 @@ void paybill() {
 	if (isAdmin == true) {
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -467,6 +478,7 @@ void paybill() {
 	}
 	cout << "Enter your account number:" << endl;
 	getline(cin, input);
+	input.erase(input.find_last_not_of(" \n\r\t")+1);
 	accnum = input;
 	// A bunch of if statments to make sure use is entering valid strings using regexes
 	if (regex_match(input, regex("(\\d{5})"))) {
@@ -476,9 +488,11 @@ void paybill() {
 			if (accounts[accountnum].getActivity()) {
 				cout << "Enter the company to pay:" << endl;
 				getline(cin, input);
+				input.erase(input.find_last_not_of(" \n\r\t")+1);
 				if (input.compare("EQ") == 0 || input.compare("CQ") == 0 || input.compare("TV") == 0) {
 					cout << "Enter the amount" << endl;
 					getline(cin, input);
+					input.erase(input.find_last_not_of(" \n\r\t")+1);
 					amount = input;
 					if (regex_match(amount, regex("(\\d+)(\.)(\\d{2})"))) {
 						// Checking if the account has enough money in their account 
@@ -539,6 +553,7 @@ void changeplan() {
 		// A bunch of if statments to make sure use is entering valid strings using regexes
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -546,6 +561,7 @@ void changeplan() {
 		currentUser = input;
 		cout << "Enter your account number:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		accnum = input;
 		if (regex_match(accnum, regex("(\\d{5})"))) {
 			int accountnum = searchUserAccounts(accnum, currentUser);
@@ -577,6 +593,7 @@ void enable() {
 		// A bunch of if statments to make sure use is entering valid strings using regexes
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -584,6 +601,7 @@ void enable() {
 		currentUser = input;
 		cout << "Enter your account number:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		accnum = input;
 		if (regex_match(accnum, regex("(\\d{5})"))) {
 			int accountnum = searchUserAccounts(accnum, currentUser);
@@ -618,6 +636,7 @@ void disable() {
 		// A bunch of if statments to make sure use is entering valid strings using regexes
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -625,6 +644,7 @@ void disable() {
 		currentUser = input;
 		cout << "Enter your account number:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		accnum = input;
 		if (regex_match(accnum, regex("(\\d{5})"))) {
 			int accountnum = searchUserAccounts(accnum, currentUser);
@@ -660,12 +680,14 @@ void create() {
 		// A bunch of if statments to make sure use is entering valid strings using regexes
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		currentUser = input;
 		if (regex_match(currentUser, regex("(\[A-Za-z]*)||((\[A-Za-z]*)(\\s{1})(\[A-Za-z]*))"))) {
 			if (input.length() < 20) {
 				currentUser = input;
 				cout << "Amount in account" << endl;
 				getline(cin, input);
+				input.erase(input.find_last_not_of(" \n\r\t")+1);
 				amount = input;
 				if (regex_match(amount, regex("(\\d+)(\.)(\\d{2})"))) {
 					if (stod(amount) <= 99999.99) {
@@ -707,6 +729,7 @@ void deletes() {
 		// A bunch of if statments to make sure use is entering valid strings using regexes
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (!searchUser(input)) {
 			cout << "Invalid account holder name." << endl;
 			return;
@@ -714,6 +737,7 @@ void deletes() {
 		currentUser = input;
 		cout << "Enter your account number:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		accnum = input;
 		if (regex_match(accnum, regex("(\\d{5})"))) {
 			int accountnum = searchUserAccounts(accnum, currentUser);
@@ -744,6 +768,7 @@ void login() {
 	fillaccounts();
 	cout << "Please specify account type:" << endl;
 	getline(cin, input);
+	input.erase(input.find_last_not_of(" \n\r\t")+1);
 	if (input == "admin") {
 		cout << "Login successful as admin user" << endl;
 		loggedin = true;
@@ -753,6 +778,7 @@ void login() {
 		
 		cout << "Please enter account holder name:" << endl;
 		getline(cin, input);
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 		if (searchUser(input) == true) {
 			cout << "Login successful as standard user" << endl;
 			currentUser = input;
@@ -801,7 +827,8 @@ int main(int argc, char* argv[])
 {
 	
 	// Terminate program on FINAL input 0
-	while (input != "0") {
+	while (getline(cin, input)) {
+		input.erase(input.find_last_not_of(" \n\r\t")+1);
 
 		// If the input is a text file, we need to change the input streeam to read from it.
 		// ASSUME THAT A TEXTFILE WILL BE LOADED INSTEAD OF TEXT COMMANDS
@@ -810,7 +837,6 @@ int main(int argc, char* argv[])
 			// Change input stream here
 		}
 		// Read input from the user
-		getline(cin, input);
 		if (loggedin == true) {
 			if (input == "withdraw") {
 				withdraw();

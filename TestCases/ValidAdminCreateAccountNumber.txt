@@ -1,6 +1,6 @@
 login
-admin 
+admin
 create
-Jose Ankin 
+Jose Ankin
 450.50
-logout 
+logout
