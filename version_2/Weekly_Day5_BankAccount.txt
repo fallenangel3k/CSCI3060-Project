@@ -1,5 +1,5 @@
 00000 END OF FILE          E 00000.00 N
 00002 Brian Doe            E 00999.95 S
 00003 John Doe             E 02000.00 S
-00004 Jose Ankin           E 00450.50 S
-00001 John Doe             E 01000.00 N
+00004 Jose Ankin           E 00450.50 N
+00001 John Doe             E 01000.00 S

@@ -1,11 +1,11 @@
 00001 John Doe             E 10000.00 S
-88888 John Doe             D 00000000 S
+88888 John Doe             D 00000.00 S
 00002 Chris Doe            E 10000.00 N
-99999 Jane Doe             E 00000000 N
+99999 Jane Doe             E 00000.00 N
 22222 Brian Doe            E 00400.00 N
 44444 Tom Doe              E 00400.00 S
-10000 Troy Bartan          E 00500.00 S
-10001 Troy Bartan          E 01200.00 S
+10000 Troy Bartan          E 00965.05 S
+10001 Troy Bartan          E 01900.05 S
 10002 Timothy Franklin     E 99999.99 N
 11000 Sam Fischer          E 02000.00 S
 11001 Sam Fischer          E 03000.00 N

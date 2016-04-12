@@ -11,4 +11,3 @@
 11001 Sam Fischer          E 03000.00 N 0000
 15000 George Frick         D 00250.00 N 0000
 20000 Phil Cooper          E 00100.00 S 0000
-00000 Jose Ankin           E 00450.50 S 0000
