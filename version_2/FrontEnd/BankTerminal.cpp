@@ -6,8 +6,7 @@
 #include <string>
 #include <regex>
 #include <vector>
-
-
+#include <ctime>
 
 using namespace std;
 // To see if a user is logged in
@@ -32,6 +31,8 @@ BankAccount* accounts = new BankAccount[maxAccount];
 BankAccount* newAccounts = new BankAccount[maxAccount];
 // THis keeps track of all the transactions done.
 vector<string> transactions(0);
+// Transaction Index
+string transactionFileIndex = "";
 
 // Method to search if a user exists
 // takes in the user you are looking for
@@ -801,7 +802,8 @@ void login() {
 // values.
 void logout() {
 	transactionsLine("00", loggedinUser, "00000", "00000.00", "  ");
-	FILE * transactionfile = fopen("../TransactionFile.txt", "a");
+        string filename = "../TransactionFiles/" + transactionFileIndex + "TransactionFile.txt";
+	FILE * transactionfile = fopen(filename.c_str(), "a");
 	char* tmp ;
 	for (int i = 0; i < transactions.size(); i++) {
 
@@ -825,7 +827,44 @@ void logout() {
 
 int main(int argc, char* argv[])
 {
-	
+time_t currentTime;
+
+        // Find the current date and time
+        struct tm *localTime;
+        time( &currentTime );
+        localTime = localtime( &currentTime );
+
+        int Day    = localTime->tm_mday;
+        int Month  = localTime->tm_mon + 1;
+        int Year   = localTime->tm_year + 1900;
+        int Hour   = localTime->tm_hour;
+        int Min    = localTime->tm_min;
+        int Sec    = localTime->tm_sec;
+        
+        string d = to_string(Day);
+        string m = to_string(Month);
+        if (Day < 10) {
+            d = "0" + to_string(Day);
+        }
+        if (Month < 10) {
+            m = "0" + to_string(Month);
+        }
+        
+        string h = to_string(Hour);
+        string min = to_string(Min);
+        string s = to_string(Sec);
+        if (Hour < 10) {
+            h = "0" + to_string(Hour);
+        }
+        if (Min < 10) {
+            min = "0" + to_string(Min);
+        }
+        if (Sec < 10) {
+            s = "0" + to_string(Sec);
+        }
+        transactionFileIndex = m + d + to_string(Year) + h + min + s;
+        
+
 	// Terminate program on FINAL input 0
 	while (getline(cin, input)) {
 		input.erase(input.find_last_not_of(" \n\r\t")+1);
@@ -866,7 +905,9 @@ int main(int argc, char* argv[])
 		} else {
 			if (input == "login") {
 				login();
-			} else {
+			} else if (input == "exit") {
+                            return 0;
+                        } else {
 				cout << "Invalid Command" << endl;
 			}
 		}
