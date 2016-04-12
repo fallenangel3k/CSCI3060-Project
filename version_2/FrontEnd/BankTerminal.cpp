@@ -168,7 +168,7 @@ void deleteAccount(int accountnum) {
 // Method to fill the accounts array with bank accounts 
 void fillaccounts() {
 	ifstream myReadFile;
-	myReadFile.open("../BankAccount.txt");
+	myReadFile.open("BankAccount.txt");
 	string line;
 	string accountnum;
 	string accountname;

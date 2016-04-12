@@ -1,0 +1,17 @@
+login
+standard
+John Doe
+deposit
+00001
+465.10
+paybill
+000001
+TV
+100.00
+logout
+login
+admin
+disable
+Brian Doe
+00002
+logout

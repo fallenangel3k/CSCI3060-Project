@@ -1,0 +1,14 @@
+login
+admin
+changeplan
+Jose Ankin
+00003
+logout
+login
+standard
+John Doe
+transfer
+00001
+00003
+100.00
+logout

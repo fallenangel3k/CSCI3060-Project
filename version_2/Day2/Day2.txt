@@ -1,0 +1,14 @@
+login
+admin
+create
+John Doe
+2000.00
+deposit
+John Doe
+00001
+200.00
+withdraw
+Brian Doe
+00002
+1000.00
+logout

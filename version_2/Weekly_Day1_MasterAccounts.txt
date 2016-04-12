@@ -1,0 +1,3 @@
+00000 END OF FILE          E 00000.00 N 0000
+00001 John Doe             E 01000.00 S 0000
+00002 Brian Doe            E 02000.00 S 0000

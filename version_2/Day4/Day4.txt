@@ -1,0 +1,15 @@
+login
+admin
+create
+Jose Ankin
+450.50
+delete
+John Doe
+00001
+enable
+Brian Doe
+00002
+create
+John Doe
+1000.00
+logout

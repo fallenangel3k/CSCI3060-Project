@@ -33,3 +33,7 @@ mv BankAccount.txt Daily_BankAccount.txt
 mv MergedTransactionFile.txt Daily_MergedTransactionFile.txt
 mv new_BankAccounts.txt Daily_New_BankAccount.txt
 mv new_MasterAccounts.txt Daily_New_MasterAccounts.txt
+
+# Delete the newline
+truncate -s -1 Daily_New_MasterAccounts.txt Daily_New_BankAccount.txt
+
