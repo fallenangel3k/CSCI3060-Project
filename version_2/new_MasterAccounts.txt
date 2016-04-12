@@ -1,0 +1,15 @@
+00001 John Doe             E 10000.00 S 0000
+88888 John Doe             D 00000.00 S 0000
+00002 Chris Doe            E 10000.00 N 0000
+99999 Jane Doe             E 00000.00 N 0000
+22222 Brian Doe            E 00400.00 N 0000
+44444 Tom Doe              E 00400.00 S 0000
+10000 Troy Bartan          E 00500.00 S 0000
+10001 Troy Bartan          E 01200.00 S 0000
+10002 Timothy Franklin     E 99999.99 N 0000
+11000 Sam Fischer          E 02000.00 S 0000
+11001 Sam Fischer          E 03000.00 N 0000
+15000 George Frick         D 00250.00 N 0000
+20000 Phil Cooper          E 00100.00 S 0000
+00000 Jose Ankin           E 00450.50 S 0000
+00000 Jose Ankin           E 00450.50 S 0000
