@@ -4,6 +4,8 @@
 //	Member: Calvin Lo, Albert Fung, Karan Chandwaney
 //	Purpose: processes and applies all transactions from merged Bank Account Transaction files
 
+package BackEnd;
+
 import java.util.*;
 
 // Store the account information
@@ -51,7 +53,7 @@ public class Transactions {
 		all_accounts = new ArrayList<account>();
 		all_trans = new ArrayList<trans>();
 		FR = new FileReader();
-		parseMaster("../MasterAccounts.txt");
+		parseMaster("MasterAccounts.txt");
 		parseMerged(mergedPath);
 
 		// init trans_index to zero;
@@ -177,14 +179,14 @@ public class Transactions {
 
         // Write Current Bank Account File
 	public void createNewCurrent(List<account> updated_accounts) {
-		FileWriter FW = new FileWriter("../new_BankAccounts.txt");
+		FileWriter FW = new FileWriter("new_BankAccounts.txt");
 		FW.writeCurrent(updated_accounts);
 		FW.close();
 	}
 
 	// Write Master Bank Account File
 	public void createNewMaster(List<account> updated_accounts) {
-		FileWriter FW = new FileWriter("../new_MasterAccounts.txt");
+		FileWriter FW = new FileWriter("new_MasterAccounts.txt");
 		FW.writeMaster(updated_accounts);
 		FW.close();
 	}

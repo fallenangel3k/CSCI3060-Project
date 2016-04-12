@@ -802,7 +802,7 @@ void login() {
 // values.
 void logout() {
 	transactionsLine("00", loggedinUser, "00000", "00000.00", "  ");
-        string filename = "../TransactionFiles/" + transactionFileIndex + "TransactionFile.txt";
+        string filename = "TransactionFiles/" + transactionFileIndex + "TransactionFile.txt";
 	FILE * transactionfile = fopen(filename.c_str(), "a");
 	char* tmp ;
 	for (int i = 0; i < transactions.size(); i++) {

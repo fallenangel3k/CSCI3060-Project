@@ -6,6 +6,8 @@
 //	Output files: Merged transaction files, new current bank accounts file, new master bank accounts file
 // 	How this is intended to run: Compile all other classes and run this as the main class
 
+package BackEnd;
+
 public class Main {
 
 	public static void main(String args[]) {
