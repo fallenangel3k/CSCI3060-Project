@@ -1,5 +1,5 @@
 #!/bin/bash
-# CSCI 3060/ SOFE 3980 Course Project Daily Script
+# CSCI 3060/ SOFE 3980 Course Project Weekly Script
 # Group: Blissfully Elephant
 # Member: Calvin Lo, Matthew Mccormick
 
